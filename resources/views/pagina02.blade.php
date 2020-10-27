@@ -10,9 +10,9 @@
 
 @section('contenido')
 
-<h3>Er body de la 02</h3>
+<h3> El tema elegido es: {{ $tema }}</h3>
 
-<a href="{{url('/') }}" class ="btn btn-xd btn-info pull-right">página 01 </a>
+<a href="{{url('/') }}" class ="btn btn-xd btn-info pull-right">Volver </a>
 
 @endsection
 

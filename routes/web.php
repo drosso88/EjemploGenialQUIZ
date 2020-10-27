@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('pagina01');
 });
 
-Route::get('/pagina02', function () {
-    return view('pagina02');
+Route::get('/pagina02/{tema}', function ($tema) {
+    return view('pagina02', ['tema'=>$tema]);
 });
+
+Route::get('pregunta/{tema}', 'PreguntasController@carga_pregunta');
